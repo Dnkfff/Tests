@@ -18,17 +18,16 @@ test("Checking empty string ( expects error )", async () => {
 	  expect(error).not.toBe(undefined);
 	}
 });
-  
-test("Checking errors if missing password ( expect error )", async () => {
-  
+
+test("Checking errors if missing password ( expect error )", async () => {  
 	try {
 	  await hashFucn(emptyPass);
 	} catch (error) {
 	  expect(error).not.toBe(undefined);
 	}
 });
-  
-  //testing keylen
+
+//testing keylen
 test("Checking if keylen length matching variable", async () => {
 	const hashData = {
 	  password: pass.string,
@@ -39,19 +38,19 @@ test("Checking if keylen length matching variable", async () => {
 	const result = await hashFunc(hashData);
 	expect(typeof result.toString("hex")).toBe("string");
 });
-  
+
 //   test("Checking if keylen 64 equal to default keylen", async () => {
 // 	const hashData1 = {
 // 	  password: pass_string,
 // 	  salt: salt_string,
 // 	  keylen: 64,
 // 	};
-  
+
 // 	const hashData2 = {
 // 	  password: pass_string,
 // 	  salt: salt_string,
 // 	};
-  
+
 // 	const firstHash = await hashFucn(hashData1);
 // 	const secondHash = await hashFucn(hashData2);
 // 	expect(firstHash.toString("hex")).toEqual(secondHash.toString("hex"));

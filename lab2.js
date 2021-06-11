@@ -1,6 +1,7 @@
 'use strict';
 
-const { scrypt } = require('crypto');
+const { scryptSync } = require('crypto');
+const bcrypt = require('bcrypt');
 
 // const hashFunc = scrypt('password', 'salt', 64, (err, derivedKey) => {
 // 	if (err) throw err;
@@ -17,12 +18,12 @@ const hashFunc = (hashData) => {
 	const { salt, password } = hashData;
 	const keylen = hashData.keylen ? hashData.keylen : defaultKeyLen;
   
-	return scrypt(password, salt, keylen, (err, derivedKey) => {
+	return scryptSync(password, salt, keylen, (err, derivedKey) => {
 		if (err) throw err;
 		console.log(derivedKey);  // '3745e48...08d59ae'
 	});
-  };
+};
 
 module.exports = {
 	hashFunc
-}
+};
