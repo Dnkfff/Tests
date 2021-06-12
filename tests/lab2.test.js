@@ -1,16 +1,16 @@
-const { hashFucn, hashFunc } = require('../lab2');
+const { hashFunc } = require('../lab2');
 const { pass, input, } = require('../data');
 const emptyString = {
-	password: "1",
-	salt: "",
+	password: '',
+	salt: '',
 };
 
 const emptyPass = {
-	password: "",
-	salt: "1",
+	password: '',
+	salt: '1',
 }
 
-test("Checking empty string ( expects error )", async () => {
+test('Checking empty string ( expects error )', async () => {
  
 	try {
 	  await hashFunc(emptyString);
@@ -19,7 +19,7 @@ test("Checking empty string ( expects error )", async () => {
 	}
 });
 
-test("Checking errors if missing password ( expect error )", async () => {  
+test('Checking errors if missing password ( expect error )', async () => {  
 	try {
 	  await hashFucn(emptyPass);
 	} catch (error) {
@@ -28,7 +28,7 @@ test("Checking errors if missing password ( expect error )", async () => {
 });
 
 //testing keylen
-test("Checking if keylen length matching variable", async () => {
+test('Checking if keylen length matching variable', async () => {
 	const hashData = {
 	  password: pass.string,
 	  salt: input.string,
@@ -38,6 +38,8 @@ test("Checking if keylen length matching variable", async () => {
 	const result = await hashFunc(hashData);
 	expect(typeof result.toString("hex")).toBe("string");
 });
+
+test('')
 
 //   test("Checking if keylen 64 equal to default keylen", async () => {
 // 	const hashData1 = {
