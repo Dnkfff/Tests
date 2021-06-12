@@ -1,5 +1,5 @@
 const { hashFunc } = require('../lab2');
-const { pass, input, } = require('../data');
+const { pass, input, } = require('../testdata/validTestData');
 const emptyString = {
 	password: '',
 	salt: '',
