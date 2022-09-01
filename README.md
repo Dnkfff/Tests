@@ -2,4 +2,4 @@
 
 ![Build Status](https://app.travis-ci.com/ddynikov/Tests.svg?branch=main)
 
-Labs for component-based software engineering
+Лабки для компонент(component-based software engineering)
