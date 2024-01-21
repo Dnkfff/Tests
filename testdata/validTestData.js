@@ -13,12 +13,12 @@ const pass = {
 const input = {
 	num: 1415926,
 	string: 'testString',
-	kac: 'Словяне вперёд!',
+	kac: 'Словяне вперёд',
 	specSymb: '^^$#@!:',
 	emoji: '😀 😃 😄 😁',
-	arabic: 'الله أكبر', 
 	japanese: 'こんにちは',
 	chineese: '榮耀歸於烏克蘭',
+	arabic: 'الله أكبر',
 };
 
 module.exports = {
