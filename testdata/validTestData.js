@@ -13,7 +13,7 @@ const pass = {
 const input = {
 	num: 1415926,
 	string: 'testString',
-	kac: 'Словяне вперёд',
+	kac: 'Словяне назад',
 	specSymb: '^^$#@!:',
 	emoji: '😀 😃 😄 😁',
 	japanese: 'こんにちは',
