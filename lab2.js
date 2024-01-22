@@ -1,6 +1,6 @@
 const { scrypt } = require('crypto')
 
-// promisify scrypt with callback
+// promisifyed scrypt with callback
 const hashFunc = ({ salt, password, keylen = 64 }) =>
   new Promise((resolve) => {
     scrypt(password, salt, keylen, (err, derivedKey) => {
