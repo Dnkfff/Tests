@@ -6,14 +6,14 @@ const testCases = {
         name: 'Null salt',
         values: {
           password: 'qwerty',
-          salt: null,
+          salt: null
         },
       },
       {
         name: 'Null password',
         values: {
           password: null,
-          hash: 'qwerty',
+          hash: 'qwerty'
         },
       },
       {
@@ -21,7 +21,7 @@ const testCases = {
         values: {
           password: 'qwerty',
           hash: 'qwerty',
-          keylen: NaN,
+          keylen: NaN
         },
       },
       {
@@ -29,7 +29,7 @@ const testCases = {
         values: {
           password: 'qwerty',
           hash: 'qwerty',
-          keylen: Infinity,
+          keylen: Infinity
         },
       },
     ],
@@ -44,7 +44,7 @@ const pass = {
   regExp: /d(b+)d/g,
   emoji: '😀 😃 😄 😁',
   ukr: 'Слава Україні!',
-  specSymb: '^^$#@!:',
+  specSymb: '^^$#@!:'
 }
 
 const input = {
@@ -54,17 +54,17 @@ const input = {
   specSymb: '^^$#@!:',
   emoji: '😀 😃 😄 😁',
   arabic: 'الله أكبر',
-  japan: 'こんにちは',
+  japan: 'こんにちは'
 }
 
 const emptyString = {
   password: '',
-  salt: '',
+  salt: ''
 }
 
 const emptyPass = {
   password: '',
-  salt: '1',
+  salt: '1'
 }
 
 module.exports = {
@@ -72,5 +72,5 @@ module.exports = {
   input,
   emptyString,
   emptyPass,
-  testCases,
+  testCases
 }
