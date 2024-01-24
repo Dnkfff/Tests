@@ -2,4 +2,4 @@
 
 ![Build Status](https://app.travis-ci.com/Dnkfff/Tests.svg?branch=main)
 
-Лаби для компонент(labs for component-based software engineering)
+Лаби для компонент (labs for component-based software engineering)
