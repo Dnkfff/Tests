@@ -23,7 +23,7 @@ describe('Test scrypt module', () => {
     const hashData = {
       password: pass.string,
       salt: input.string,
-      keylen: 27,
+      keylen: 27
     };
 
     const result = await hashFunc(hashData);
@@ -34,7 +34,7 @@ describe('Test scrypt module', () => {
   test('Checking default strings', async () => {
     const hashData = {
       password: pass.string,
-      salt: input.string,
+      salt: input.string
     };
     try {
       await hashFucn(hashData);
@@ -47,7 +47,7 @@ describe('Test scrypt module', () => {
   test('Checking numbers ( expect error )', async () => {
     const hashData = {
       password: pass.num,
-      salt: input.num,
+      salt: input.num
     };
 
     try {
@@ -61,7 +61,7 @@ describe('Test scrypt module', () => {
   test('Checking regular expressions ( expect error )', async () => {
     const hashData = {
       password: pass.regExp,
-      salt: input.regExp,
+      salt: input.regExp
     };
 
     try {
@@ -75,7 +75,7 @@ describe('Test scrypt module', () => {
   test('Checking cyrillic languages', async () => {
     const hashData = {
       password: pass.ukr,
-      salt: input.cyr,
+      salt: input.cyr
     };
 
     const result = await hashFunc(hashData);
@@ -86,7 +86,7 @@ describe('Test scrypt module', () => {
   test('Checking special symbols', async () => {
     const hashData = {
       password: pass.specSymb,
-      salt: input.specSymb,
+      salt: input.specSymb
     };
 
     const result = await hashFunc(hashData);
@@ -97,7 +97,7 @@ describe('Test scrypt module', () => {
   test('Checking emoji', async () => {
     const hashData = {
       password: pass.emoji,
-      salt: input.emoji,
+      salt: input.emoji
     };
 
     const result = await hashFunc(hashData);
@@ -108,7 +108,7 @@ describe('Test scrypt module', () => {
   test('Checking another language', async () => {
     const hashData = {
       password: pass.ukr,
-      salt: input.arabic,
+      salt: input.arabic
     };
 
     const result = await hashFunc(hashData);
