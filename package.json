@@ -8,12 +8,13 @@
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "jest": "^27.0.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.4",
+  },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
   },
-  "author": "Danil-Dynikov",
+  "author": "Daniїl-Dynikov",
   "license": "ISC"
 }

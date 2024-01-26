@@ -1,5 +1,5 @@
-# Black Box testing technology
+# Black Box testing technology and others in other one's branch
 
-![Build Status](https://travis-ci.org/ddynikov/Tests.svg?branch=main)
+![Build Status](https://app.travis-ci.com/Dnkfff/Tests.svg?branch=main)
 
-Labs for component-based software engineering
+Лаби для компонент (labs for component-based software engineering)
