@@ -44,7 +44,7 @@ const pass = {
   regExp: /d(b+)d/g,
   emoji: '😀 😃 😄 😁',
   ukr: 'Слава Україні!',
-  specSymb: '^^$#@!:'
+  specSymb: '^^$#@!:',
 }
 
 const input = {
@@ -54,17 +54,17 @@ const input = {
   specSymb: '^^$#@!:',
   emoji: '😀 😃 😄 😁',
   arabic: 'الله أكبر',
-  japan: 'ウクライナに栄光あれ'
+  japan: 'ウクライナに栄光あれ',
 }
 
 const emptyString = {
   password: '',
-  salt: ''
+  salt: '',
 }
 
 const emptyPass = {
   password: '',
-  salt: '1'
+  salt: '1',
 }
 
 module.exports = {
@@ -72,5 +72,5 @@ module.exports = {
   input,
   emptyString,
   emptyPass,
-  testCases
+  testCases,
 }
