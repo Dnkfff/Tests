@@ -13,5 +13,5 @@ const hashFunc = (hashData) => {
 };
 
 module.exports = {
-	hashFunc
+	hashFunc,
 };
