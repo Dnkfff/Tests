@@ -7,7 +7,7 @@ const pass = {
 	emoji: '😀 😃 😄 😁',
 	ukr: 'Слава Україні!',
 	pass: 'Паляниця',
-	specSymb: '^^$#@!:'
+	specSymb: '^^$#@!:',
 };
 
 const input = {
@@ -18,10 +18,10 @@ const input = {
 	emoji: '😀 😃 😄 😁',
 	japanese: 'こんにちは',
 	chineese: '榮耀歸於烏克蘭',
-	arabic: 'الله أكبر'
+	arabic: 'الله أكبر',
 };
 
 module.exports = {
 	pass,
-	input
+	input,
 }
