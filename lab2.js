@@ -11,6 +11,4 @@ const hashFunc = ({ salt, password, keylen = 64 }) =>
     })
   })
 
-module.exports = {
-	hashFunc
-};
+module.exports = { hashFunc };
