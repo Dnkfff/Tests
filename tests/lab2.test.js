@@ -23,7 +23,7 @@ describe('Test scrypt module', () => {
     const hashData = {
       password: pass.string,
       salt: input.string,
-      keylen: 27
+      keylen: 27,
     };
 
     const result = await hashFunc(hashData);
